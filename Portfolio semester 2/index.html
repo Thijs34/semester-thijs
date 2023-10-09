@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thijs van den Broek</title>
+    <link rel="icon" type="titleicon" href="pictures/letter-t.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--HTML for the header of my portfolio-->
+    <header class="header">
+        <div class="portfolio">
+            <a href=""><h2>Portfolio</h2></a>
+        </div>
+        <nav>
+            <!--HTML for the navigation of my portfolio, making a dropdown menu-->
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#requirements">Learning Outcomes ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="html/Interactivemedia.htm">Interactive Media</a></li>
+                        <li><a href="html/development.htm">Development</a></li>
+                        <li><a href="html/design.htm">Design</a></li>
+                        <li><a href="html/research.htm">Research</a></li>
+                        <li><a href="html/communication.htm">Communication</a></li>
+                        <li><a href="html/professional-identity.htm">Professional Identity</a></li>
+                    </ul>
+                </li>
+                <li><a href="#projects">Projects ▾</a>
+                    <ul class="dropdown">
+                        <li class="unready"><a href="#">SSC website </a></li>
+                        <li class="unready"><a href="#">awwwards Recreate </a></li>
+                    <li class="unready"><a href="#">Logo </a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--HTML for the main elements inside the website-->
+<main>
+    <!--HTML for my name and social media navigations underneath-->
+    <section class="home" id="home">
+        <div class="home-detail">
+            <h3> Hello it's Me</h3>
+            <h1>Thijs vd Broek</h1>
+            <h3>And I'm a <span class="textline"></span></h3>
+            <p>I am a student studying ICT with a media-profile at Fontys University in Eindhoven</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/thijs.vandenbroek.94" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/ThijsvdBroek_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://nl.pinterest.com/thijsvdbroek27/" target="_blank"><i class='bx bxl-pinterest'></i></a>
+                <a href="https://www.youtube.com/channel/UCBW35VZHEL9annDyu3Ci5MQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <a href="#projects" class="btn">Projects</a>
+        </div>
+        <figure class="home-img">
+            <div class="hero-pic">
+                <img src="pictures/profilemain-removebg-preview.png" alt="Profile-picture">
+            </div>
+        </figure>
+    </section>
+<!--HTML for the about me section (big picture and text)-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <!--picture in about section-->
+            <img src="pictures/profile.png">
+        </div>
+        <div class="about-text">
+            <!--main text of my about section. Used span so I can style it diffrently-->
+            <h2>About <span>Me</span></h2>
+            <h4>Aspiring Frontend Developer!</h4>
+            <p>As an ICT student in the media profile, I am passionate about creating beautiful and functional user interfaces. My goal is to become a frontend developer, and I have a solid foundation in HTML and css. With an eye for design and user experience, I work on several projects to stay up-to-date with the latest developments in the field. I am excited about the future of frontend development and eager to contribute my skills to the industry.</p>
+            <!--Button to navigate to the contact form-->>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </section>
+<!--HTML to get an overview of all the learning outcomes-->
+    <section class="requirement-list" id="requirements">
+        <div class="container">
+            <h1>Learning Outcomes</h1>
+            <div class="row">
+                <article class="requirement">
+                    <i class='bx bxs-color'></i>
+                    <h2>Interactive Media</h2>
+                    <p>Presenting my achievements in Interactive Media through visuals and descriptions</p>
+                    <a href="html/Interactivemedia.htm" class="btn">read more</a>
+                </article>
+                <article class="requirement">
+                    <i class='bx bx-package'></i>
+                    <h2>Development</h2>
+                    <p>Programming POCs based on validated requirements, documented with version control tools.</p>
+                    <a href="html/development.htm" class="btn">read more</a>
+                </article>
+                <article class="requirement">
+                    <i class='bx bx-paint'></i>
+                    <h2>Design</h2>
+                    <p>Creating visually captivating designs of exceptional quality using a professional toolset.</p>
+                    <a href="html/design.htm" class="btn">read more</a>
+                </article>
+                <article class="requirement">
+                    <i class='bx bx-search-alt-2'></i>
+                    <h2>Research</h2>
+                    <p>Applying curiosity-driven exploratory research methods for insightful findings.</p>
+                    <a href="html/research.htm" class="btn">read more</a>
+                </article>
+                <article class="requirement">
+                    <i class='bx bx-message-rounded-dots' ></i>
+                    <h2>Communication</h2>
+                    <p>Communicating project progress and choices to stakeholders through text and visuals.</p>
+                    <a href="html/communication.htm" class="btn">read more</a>
+                </article>
+                <article class="requirement">
+                    <i class='bx bx-briefcase' ></i>
+                    <h2>Professional Identity</h2>
+                    <p>Crafting a comprehensive professional identity with experiences, self-perception, and growth.</p>
+                    <a href="html/professional-identity.htm" class="btn">read more</a>
+                </article>
+            </div>
+        </div>
+    </section>
+<!--HTML to show some of the projects (quick navigation to the websites)-->
+    <section class="projects" id="projects">
+        <div class="main-text">
+            <p>portfolio</p>
+            <h2><span>Latest </span>projects</h2>
+        </div>
+        <div class="projects-content">
+            <!-- Making some boxes to show my projects/ and a layer to show when you hover over it (made it work with CSS) -->
+            <figure class="row">
+                <img src="pictures/SSC website.png" alt="Project 1">
+                <div class="layer">
+                    <a href="http://i523591.hera.fhict.nl/website%20recreate%202/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+                <!-- Add text and heart icon below this row -->
+                <div class="row-description">
+                    <p>Take a quick look at my recreation of the SSC website</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </figure>
+    
+            <!-- Repeat the above structure for each project row -->
+    
+            <figure class="row">
+                <img src="pictures/second.png" alt="Project 2">
+                <div class="layer">
+                    <a href="https://i523591.hera.fhict.nl/awwwards_website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+                <!-- Add text and heart icon below this row -->
+                <div class="row-description">
+                    <p>Take a quick look at the rebuild of the awwwards website</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </figure>
+    
+            <!-- Repeat for other projects -->
+    
+            <figure class="row">
+                <img src="pictures/project5.png" alt="Project 6">
+                <div class="layer">
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                <!-- Add text and heart icon below this row -->
+                <div class="row-description">
+                    <p>Description for Project 6</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </figure>
+
+            <figure class="row">
+                <img src="pictures/project5.png" alt="Project 6">
+                <div class="layer">
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                <!-- Add text and heart icon below this row -->
+                <div class="row-description">
+                    <p>Description for Project 6</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </figure>
+
+            <figure class="row">
+                <img src="pictures/project5.png" alt="Project 6">
+                <div class="layer">
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                <!-- Add text and heart icon below this row -->
+                <div class="row-description">
+                    <p>Description for Project 6</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </figure>
+
+            <figure class="row">
+                <img src="pictures/project5.png" alt="Project 6">
+                <div class="layer">
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+                <!-- Add text and heart icon below this row -->
+                <div class="row-description">
+                    <p>Description for Project 6</p>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <!--contact section of the website-->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Contact <span>Me!</span></h2>
+                <h4>If you have any questions on your mind</h4>
+                <p>Thank you for reaching out! I look forward to hearing from you and will respond as soon as possible.</p>
+                <ul class="contact-list">
+                    <li><a href="tel:0682422920">0682422920</a></li>
+                    <li><a href="mailto:thijsvdbroek12@gmail.com">thijsvdbroek12@gmail.com</a></li>
+                </ul>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/thijs.vandenbroek.94" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/ThijsvdBroek_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://nl.pinterest.com/thijsvdbroek27/" target="_blank"><i class='bx bxl-pinterest'></i></a>
+                    <a href="https://www.youtube.com/channel/UCBW35VZHEL9annDyu3Ci5MQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <input type="tel" placeholder="Your Mobile Number" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="How can I help you" required></textarea>
+                    <input type="submit" value="Send Message" class="submit" required>
+                </form>
+            </div>
+        </div>
+        <!--made thanks to https://github.com/bedimcode/portfolio-responsive-complete/blob/master/index.html-->
+    </section>
+</main>
+
+ <footer class="end">
+        <div class="last-text">
+            <p>Thank you for visiting, I hope you enjoyed your experience.</p>
+        </div>
+        <div class="top">
+            <a href="#home"><i class='bx bx-chevrons-up' ></i></a>
+        </div>
+        <!--footer of the website (last text+autoscroll to top button)-->
+    </footer>
+
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script src="js/main2.js"></script>
+
+</body>
+</html>
