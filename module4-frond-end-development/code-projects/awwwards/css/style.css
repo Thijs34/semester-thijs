@@ -1,0 +1,777 @@
+/*font family styles*/
+@font-face {
+    font-family: 'Joules et Jaques Serif';
+    src: url('../fonts/Joules et Jaques Serif.woff2') format('woff2'),
+         url('../fonts/Joules et Jaques Serif.woff') format('woff');
+}
+@font-face {
+    font-family: 'FuturaStd-BookOblique';
+    src: url('../fonts/FuturaStd-BookOblique.woff2') format('woff2'),
+         url('../fonts//FuturaStd-BookOblique.woff') format('woff');
+}
+/*removing some padding and margin for the whole css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*styling to use the background as an image*/
+.banner{
+    min-height: 100vh;
+    background: url(../pictures/Home-Hero.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/*putting a little layer over the background*/
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #003a4766;
+    z-index: -1; 
+}
+.up-button{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/*Styling for the header elements*/
+.logo img{
+    width: 50%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000000; 
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.icons i, .icons p{
+    color: #fff;
+    margin-left: 10px;
+}
+.icons{
+    display: flex;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block; 
+    margin-right: 5px;
+}
+
+.nav a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.icons i, .icons p{
+    border: 2px solid #fff; 
+    border-radius: 100%;
+    padding: 11px; 
+}
+.icon{
+    display: inline-block;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    bottom: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color:  #007c92 ;
+    height: 35px;
+    width: 70px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+.icon i{
+    font-size: 30px;
+}
+/*styling for the content used inside of the background*/
+.content {
+    position: absolute;
+    bottom: 80px; 
+    color: #fff;
+    z-index: 2; 
+    padding: 1rem 4%;
+}
+
+.content h1 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    align-items: start;
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 1.2rem; 
+    margin-right: 10px;
+}
+/*styling to put someting on a new line without the use of break*/
+.new-line {
+    display: block;
+}
+/*styling to make the header change collor when scrolling down*/
+.header.scroll {
+    background-color: #003a47; 
+    transition: background-color 0.3s ease;
+    transition: padding 1s ease;
+    padding: 0.5rem 4%;
+}
+/*styling for the svg arrow and the text*/
+.text-and-image {
+    display: flex;
+    align-items: center; 
+}
+.text-and-image img{
+    width: 10%;
+}
+.text-and-image a{
+    text-decoration: none;
+    color: white;
+}
+/*styling for the info-container underneath the banner*/
+.hero {
+    display: flex;
+    background-image: url(../pictures/hero.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 300px;
+    align-items: center;
+    padding: 1rem 4%;
+    justify-content: space-between;
+    
+}
+.hero h1{
+    color: #003a47;
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.hero p{
+    color: #003a47;
+    width: 500px;
+    font-family: 'FuturaStd-BookOblique';
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*styling for the slideshows*/
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .tabs input{
+    visibility: hidden;
+    display: none;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 50px; 
+    right: 50px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000000;
+}
+
+.buttons label {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+  .tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+  .tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
+  .tabs input:nth-child(3):checked ~ .buttons label:nth-child(3)
+  {
+    opacity: 1;
+    width: 50px;
+  }
+  .content2 {
+    position: relative;
+    width: 300vw;
+    display: flex;
+    transition: 0.5s;
+}
+
+.content2 .box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    user-select: none;
+}
+
+.content2 .box h1,
+.content2 .box p {
+    margin: 0; 
+    padding: 0.3rem 4%;
+    color: white;
+}
+.content2 .box p{
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: 'FuturaStd-BookOblique';
+}
+.content2 .box h1{
+    font-size: 30px;
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    font-weight: 100;
+}
+/*setting some backgrounds images for the slide show*/
+  .jacht{
+    background-image: url(../pictures/yachtmain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  .jacht2{
+    background-image: url(../pictures/yacht2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .jacht3{
+    background-image: url(../pictures/yacht3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /*styling to make the slide show work*/
+  .tabs input:nth-child(1):checked ~ .content2{
+    left: 0;
+  }
+  .tabs input:nth-child(2):checked ~ .content2{
+    left: -100vw;
+  }
+  .tabs input:nth-child(3):checked ~ .content2{
+    left: -200vw;
+  }
+/*images for the second slideshow*/
+.jacht4{
+    background-image: url(../pictures/jacht4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.jacht5{
+    background-image: url(../pictures/jacht5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.jacht6{
+    background-image: url(../pictures/jacht6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*images for the third slideshow*/
+.jacht7{
+    background-image: url(../pictures/jacht7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.jacht8{
+    background-image: url(../pictures/jacht8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.jacht9{
+    background-image: url(../pictures/jacht9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*Css for the second info box*/
+.info-box{
+    width: 100%;
+    align-items: center;
+    padding: 1rem 4%;
+    justify-content: space-between;
+    display: flex;
+}
+.info-box p{
+    font-size: 18px;
+    font-family: 'FuturaStd-BookOblique';
+    width: 700px;
+    color: #003a47;
+}
+.info-box h1{
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    font-size: 39px;
+    font-weight: 100;
+    color: #003a47;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #003a47;
+    border: 1px solid #003a47;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    text-transform: uppercase;
+  }
+  .shipyard a{
+    align-items: end;
+    font-weight: 700;
+  }
+.shipyard{
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/*Styling for the giant images*/
+.image-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-section img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    padding: 1rem 4%;
+}
+span{
+    text-transform: uppercase;
+}
+/*styling for the card slider*/
+.content3 {
+    position: relative;
+    display: flex;
+    transition: 0.5s;
+    padding: 1rem 4%;
+  }
+  
+  .content3 .box2 {
+    position: relative;
+    width: 35vw;
+    height: 50vh;
+    padding: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+/*images used in the card slider*/
+  .img1, .img5 {
+    background: url(../pictures/News_OUR-AWARDS-1280x720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .img2, .img3 {
+    background: url(../pictures/News_OUR-BOAT-SHOWS-1280x720\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img4,.img6{
+    background: url(../pictures/News_OUR-LAUNCHES-1280x720\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /*styling to make the buttons function*/
+  .container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content3 {
+    left: 53vw;
+  }
+  
+  .container3 .tabs input:nth-child(2):checked ~ .container3 .tabs .content3 {
+    left: -15.5vw;
+  }
+  
+  .container3 .tabs input:nth-child(3):checked ~ .container3 .tabs .content3 {
+    left: -65vw;
+  }
+  .container3 {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+nav.tabs .buttons2 label {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  /*styling for the title of the card slide show*/
+.slideshow h1{
+    padding: 1rem 4%;
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    font-size: 39px;
+    font-weight: 100;
+    color: #003a47;
+    margin-top: 50px;
+}
+.box-container figcaption{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Joules et Jaques Serif', sans-serif;
+    color: #003a47;
+}
+.buttons2 {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000000;
+}
+
+.buttons2 label {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*showing which button is checked*/
+.tabs input:nth-child(1):checked ~ .buttons2 label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons2 label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttons2 label:nth-child(3),
+.tabs input:nth-child(4):checked ~ .buttons2 label:nth-child(4),
+.tabs input:nth-child(5):checked ~ .buttons2 label:nth-child(5),
+.tabs input:nth-child(6):checked ~ .buttons2 label:nth-child(6){
+    opacity: 1;
+    width: 50px;
+  }
+  .buttons2 label:nth-child(4),
+  .buttons2 label:nth-child(5),
+  .buttons2 label:nth-child(6) {
+      display: none;
+  }
+  #menu{
+    display: none;
+  }
+
+  .footer-col {
+    flex: 1;
+    margin-right: 10px;
+}
+/*putting the navigations inside the footer in rows of 3*/
+nav.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem 4%;
+    justify-content: space-between;
+}
+.container-last{
+    padding: 1rem 4%;
+    color: white;
+}
+/*styling of the footer*/
+footer{
+    background: url(../pictures/mappa-nautica.530ebf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-last img{
+    width: 10%;
+}
+.container-last ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+.container-last ul a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+}
+.container-last h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'FuturaStd-BookOblique';
+    font-weight: 800;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text a{
+    text-decoration: none;
+    color: #fff;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 10px
+}
+.copyright ul{
+    display: flex;
+    list-style: none;
+}
+.copyright ul li a{
+   margin-right: 10px;
+   text-decoration: none;
+   color: white;
+   font-size: 10px
+}
+/*some styling to make the page responsive */
+/*changing some content to display block, to make them display underneath echother*/
+  @media (max-width: 930px) {
+    .info-box{
+        display: block;
+    }
+    .info-box p{
+        width: auto;
+    }
+  }
+  @media (max-width: 500px) {
+    .info-box{
+        margin-top: 50px;
+    }
+    .image-section{
+        margin-top: 80px;
+    }
+    .info-box h1{
+        font-size: 30px;
+    }
+    nav.row{
+        display: block;
+    }
+  }
+  @media (max-width: 700px) {
+    .hero{
+        display: block;
+    }
+    .hero p{
+        width: auto;
+        margin-top: 10px;
+    }
+  }
+  /*setting some stylings to correct the new positions of the card sliders*/
+  @media (max-width: 1100px) {
+    .content3 .box2 {
+        position: relative;
+        width: 50vw;
+      }
+      .container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content3 {
+        left: 105vw;
+      }
+      .container3 .tabs input:nth-child(3):checked ~ .container3 .tabs .content3 {
+        left: -110vw;
+      }
+  }
+  @media (max-width: 900px) {
+    .content3 .box2 {
+        position: relative;
+        width: 80vw;
+      }
+      .container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content3 {
+        left: 190vw;
+      }
+      .container3 .tabs input:nth-child(2):checked ~ .container3 .tabs .content3 {
+        left: 110vw;
+      }
+      .container3 .tabs input:nth-child(3):checked ~ .container3 .tabs .content3 {
+        left: 30vw;
+      }
+      .container3 .tabs input:nth-child(4):checked ~ .container3 .tabs .content3 {
+        left: -60vw;
+      }
+      .container3 .tabs input:nth-child(5):checked ~ .container3 .tabs .content3 {
+        left: -140vw;
+      }
+      .container3 .tabs input:nth-child(6):checked ~ .container3 .tabs .content3 {
+        left: -220vw;
+      }
+      .buttons2 label:nth-child(4),
+      .buttons2 label:nth-child(5),
+      .buttons2 label:nth-child(6) {
+        display: inline-block;
+    }
+    .header ul li{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    nav.row{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-col{
+        margin-bottom: 10px;
+    }
+    .copyright{
+        display: block;
+    }
+    .copyright p{
+        margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content3 {
+        left: 190vw;
+      }
+      .container3 .tabs input:nth-child(2):checked ~ .container3 .tabs .content3 {
+        left: 105vw;
+      }
+      .container3 .tabs input:nth-child(3):checked ~ .container3 .tabs .content3 {
+        left: 25vw;
+      }
+      .container3 .tabs input:nth-child(4):checked ~ .container3 .tabs .content3 {
+        left: -55vw;
+      }
+      .container3 .tabs input:nth-child(5):checked ~ .container3 .tabs .content3 {
+        left: -138vw;
+      }
+      .container3 .tabs input:nth-child(6):checked ~ .container3 .tabs .content3 {
+        left: -215vw;
+      }
+  }
+  @media (max-width: 380px) {
+    .container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content3 {
+      left: 215vw;
+    }
+}
+@media (max-width: 400px) {
+    .content3 .box2 {
+        position: relative;
+        width: 95vw;
+      }
+      .container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content3 {
+        left: 225vw;
+      }
+      .container3 .tabs input:nth-child(2):checked ~ .container3 .tabs .content3 {
+        left: 125vw;
+      }
+      .container3 .tabs input:nth-child(3):checked ~ .container3 .tabs .content3 {
+        left: 25vw;
+      }
+      .container3 .tabs input:nth-child(4):checked ~ .container3 .tabs .content3 {
+        left: -70vw;
+      }
+      .container3 .tabs input:nth-child(5):checked ~ .container3 .tabs .content3 {
+        left: -168vw;
+      }
+      .container3 .tabs input:nth-child(6):checked ~ .container3 .tabs .content3 {
+        left: -265vw;
+      }
+      .banner{
+        background: url(../pictures/hero-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+      }
+      .content2 .box p{
+        font-size: 10px;
+    }
+    .content2 .box h1{
+        font-size: 22px
+    }
+}
+@media (max-width: 1000px) {
+    .jacht{
+        background: url(../pictures/yacht4.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht3{
+        background: url(../pictures/yacht5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht4{
+        background: url(../pictures/yacht5.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht5{
+        background: url(../pictures/yacht6.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht6{
+        background: url(../pictures/yacht7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht7{
+        background: url(../pictures/yacht8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht8{
+        background: url(../pictures/yacht9.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .jacht9{
+        background: url(../pictures/yacht10.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+@media (max-width: 450px) {
+    .img2, .img3, .img4, .img6{
+        background: url(../pictures/News_OUR-AWARDS-1280x720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
