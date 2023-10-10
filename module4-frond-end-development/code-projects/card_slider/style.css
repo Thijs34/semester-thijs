@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(90, 63, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs input {
+  visibility: hidden;
+  display: none;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  transform: translate(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000000;
+}
+
+.buttons label {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  opacity: 0.5;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.tabs input:nth-child(4):checked ~ .buttons label:nth-child(4),
+.tabs input:nth-child(5):checked ~ .buttons label:nth-child(5),
+.tabs input:nth-child(6):checked ~ .buttons label:nth-child(6) {
+  opacity: 1;
+  width: 50px;
+}
+
+.content {
+  position: relative;
+  width: 600vw;
+  display: flex;
+  transition: 0.5s;
+  padding: 1rem 4%;
+}
+
+.content .box {
+  position: relative;
+  width: 36vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 40px;
+  margin-right: 10px;
+}
+
+
+.web3 {
+  background: url(pictures/News_OUR-SUCCESSES-1280x720.jpg);
+}
+
+.graphics3 {
+  background: linear-gradient(#9ab8ae, #07080a);
+}
+
+.photography3 {
+  background: linear-gradient(#00a36d, #084dd7);
+}
+
+.web2{
+  background: linear-gradient(#318368, #131416);
+}
+
+.graphics2 {
+  background: linear-gradient(#5f9618, #7d9ddc);
+}
+
+.photography2 {
+  background: linear-gradient(#ff5733, #ffcc33);
+}
+
+.container3 .tabs input:nth-child(1):checked ~ .container3 .tabs .content {
+  left: 0;
+}
+
+.container3 .tabs input:nth-child(2):checked ~ .container3 .tabs .content {
+  left: -100vw;
+}
+
+.container3 .tabs input:nth-child(3):checked ~ .container3 .tabs .content {
+  left: -200vw;
+}
+
+.container3 .tabs input:nth-child(4):checked ~ .container3 .tabs .content {
+  left: -300vw;
+}
+
+.container3 .tabs input:nth-child(5):checked ~ .container3 .tabs .content {
+  left: -400vw;
+}
+
+.container3 .tabs input:nth-child(6):checked ~ .container3 .tabs .content {
+  left: -500vw;
+}
+nav.tabs .buttons label {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Specific styles for checked labels (selected button) */
+nav.tabs .buttons input[type="radio"]:checked + label {
+  background-color: #e74c3c;
+}
