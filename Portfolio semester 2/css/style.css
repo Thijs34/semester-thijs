@@ -632,6 +632,13 @@ a{
     .contact{
         grid-template-columns: 1fr;
     }
+    .image-collection{
+        display: block !important;
+
+    }
+    .image-collection img{
+        max-width: 100%!important;
+    }
 }
 /*styling for the project-content*/
 .projects-content {
@@ -1006,7 +1013,7 @@ button:hover{
     margin-bottom: 20px;
 }
 
-.imagecontainer, .image-container2{
+.imagecontainer{
     width: 100%;
     margin-top: 10px;
     margin-bottom: 50px;
@@ -1018,12 +1025,11 @@ button:hover{
     border: 3px solid white;
     margin-right: 20px;
 }
-.imagecontainer2 img{
+.imagecontainer2 img, .imagecontainer3 img{
     max-width: 350px;
     float: right;
     border-radius: 10px;
     border: 3px solid white;
-    margin-right: 20px;
 }
 .h42{
   font-size: 15px;
@@ -1071,4 +1077,49 @@ button:hover{
 }
 #image-left{
     margin-left: 10px;
+}
+.imagecontainer3{
+    margin-top: -25px;
+    margin-bottom: 40px;
+}
+.image-collection img{
+    max-width: 47%;
+    display: flex;
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-right: 20px;
+}
+
+.image-collection{
+    display: flex;
+    justify-content: center;
+}
+.tops{
+    margin-top: 10px;
+}
+.logo-size{
+    width: 40%;
+}
+.logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subheading{
+  font-family:Arial, Helvetica, sans-serif;
+  display:block;
+  text-transform: uppercase;
+  font-weight: 1000;
+  letter-spacing: 0.1em;
+  color: var(--main-color);
+  margin-top: 10px;
+}
+.subheading2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    color: var(--main-color);
+    margin-bottom: 10px;
 }
