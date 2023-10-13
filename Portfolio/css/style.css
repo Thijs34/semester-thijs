@@ -86,7 +86,7 @@ body {
     font-weight: 900;
     color: var(--text-color);
 }
-ul li {
+menu li {
     display: inline-block;
     position: relative;
 }
@@ -112,24 +112,24 @@ ul li {
     align-items: center;
     display: flex;
 }
-ul li ul.dropdown li {
+menu li menu.dropdown li {
     display: block;
 }
 
-.navbar-nav li ul.dropdown {
-    width: 100%;
+.navbar-nav li menu.dropdown {
+   
     background: #171149;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
-ul li a:hover {
+menu li a:hover {
     background: var(--third-bg-color);
     text-decoration: underline;
 }
 
-ul li:hover ul.dropdown {
+ li:hover menu.dropdown {
     display: block;
 }
 .dropdown li a {
@@ -1124,7 +1124,7 @@ button:hover{
     color: var(--main-color);
     margin-bottom: 10px;
 }
-ul li a i{
+menu li a i{
     font-size: 40px;
     text-align: center;
 }
