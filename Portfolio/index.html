@@ -67,18 +67,16 @@
     </section>
 <!--HTML for the about me section (big picture and text)-->
     <section class="about" id="about">
-        <div class="about-img">
-            <!--picture in about section-->
-            <img src="pictures/profile.png">
-        </div>
-        <div class="about-text">
-            <!--main text of my about section. Used span so I can style it diffrently-->
+        <figure class="about-img">
+            <!-- Picture in the about section -->
+            <img src="pictures/profile.png" alt="Profile Picture">
+        </figure>
+        <article class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Aspiring Frontend Developer!</h4>
-            <p>As an ICT student in the media profile, I am passionate about creating beautiful and functional user interfaces. My goal is to become a frontend developer, and I have a solid foundation in HTML and css. With an eye for design and user experience, I work on several projects to stay up-to-date with the latest developments in the field. I am excited about the future of frontend development and eager to contribute my skills to the industry.</p>
-            <!--Button to navigate to the contact form-->>
+            <p>As an ICT student in the media profile, I am passionate about creating beautiful and functional user interfaces. My goal is to become a frontend developer, and I have a solid foundation in HTML and CSS. With an eye for design and user experience, I work on several projects to stay up-to-date with the latest developments in the field. I am excited about the future of frontend development and eager to contribute my skills to the industry.</p>
             <a href="#contact" class="btn">Contact</a>
-        </div>
+        </article>
     </section>
 <!--HTML to get an overview of all the learning outcomes-->
     <section class="requirement-list" id="requirements">
@@ -152,10 +150,10 @@
                     <a href="https://i523591.hera.fhict.nl/awwwards/" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
                 <!-- Add text and heart icon below this row -->
-                <div class="row-description">
+                <figcaption class="row-description">
                     <p>Take a quick look at the rebuild of the awwwards website</p>
                     <i class="fa-solid fa-heart"></i>
-                </div>
+                </figcaption>
             </figure>
     
             <!-- Repeat for other projects -->
@@ -166,10 +164,10 @@
                     <a href="html/logo.html"><i class='bx bx-link-external'></i></a>
                 </div>
                 <!-- Add text and heart icon below this row -->
-                <div class="row-description">
+                <figcaption class="row-description">
                     <p>Take a look at my Logo</p>
                     <i class="fa-solid fa-heart"></i>
-                </div>
+                </figcaption>
             </figure>
 
             <figure class="row">
@@ -178,10 +176,10 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
                 <!-- Add text and heart icon below this row -->
-                <div class="row-description">
-                    <p>Description for Project 6</p>
+                <figcaption class="row-description">
+                    <p>Description for future project</p>
                     <i class="fa-solid fa-heart"></i>
-                </div>
+                </figcaption>
             </figure>
 
             <figure class="row">
@@ -190,10 +188,10 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
                 <!-- Add text and heart icon below this row -->
-                <div class="row-description">
-                    <p>Description for Project 6</p>
+                <figcaption class="row-description">
+                    <p>Description for future project</p>
                     <i class="fa-solid fa-heart"></i>
-                </div>
+                </figcaption>
             </figure>
 
             <figure class="row">
@@ -202,44 +200,44 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
                 <!-- Add text and heart icon below this row -->
-                <div class="row-description">
-                    <p>Description for Project 6</p>
+                <figcaption class="row-description">
+                    <p>Description for future project</p>
                     <i class="fa-solid fa-heart"></i>
-                </div>
+                </figcaption>
             </figure>
         </div>
     </section>
 
     <!--contact section of the website-->
     <section class="contact" id="contact">
-        <div class="contact-container">
-            <div class="contact-text">
-                <h2>Contact <span>Me!</span></h2>
-                <h4>If you have any questions on your mind</h4>
-                <p>Thank you for reaching out! I look forward to hearing from you and will respond as soon as possible.</p>
-                <ul class="contact-list">
-                    <li><a href="tel:0682422920">0682422920</a></li>
-                    <li><a href="mailto:thijsvdbroek12@gmail.com">thijsvdbroek12@gmail.com</a></li>
-                </ul>
-                <div class="contact-icons">
-                    <a href="https://www.facebook.com/thijs.vandenbroek.94" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://twitter.com/ThijsvdBroek_" target="_blank"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://nl.pinterest.com/thijsvdbroek27/" target="_blank"><i class='bx bxl-pinterest'></i></a>
-                    <a href="https://www.youtube.com/channel/UCBW35VZHEL9annDyu3Ci5MQ" target="_blank"><i class='bx bxl-youtube'></i></a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <form action="">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email Address" required>
-                    <input type="tel" placeholder="Your Mobile Number" required>
-                    <textarea name="" id="" cols="35" rows="10" placeholder="How can I help you" required></textarea>
-                    <input type="submit" value="Send Message" class="submit" required>
-                </form>
-            </div>
+    <article class="contact-container">
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>If you have any questions on your mind</h4>
+            <p>Thank you for reaching out! I look forward to hearing from you and will respond as soon as possible.</p>
+            <ul class="contact-list">
+                <li><a href="tel:0682422920">0682422920</a></li>
+                <li><a href="mailto:thijsvdbroek12@gmail.com">thijsvdbroek12@gmail.com</a></li>
+            </ul>
+            <nav class="social-media">
+                <a href="https://www.facebook.com/thijs.vandenbroek.94" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/ThijsvdBroek_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://nl.pinterest.com/thijsvdbroek27/" target="_blank"><i class='bx bxl-pinterest'></i></a>
+                <a href="https://www.youtube.com/channel/UCBW35VZHEL9annDyu3Ci5MQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+            </nav>
         </div>
-        <!--made thanks to https://github.com/bedimcode/portfolio-responsive-complete/blob/master/index.html-->
-    </section>
+        <section class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="tel" placeholder="Your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How can I help you" required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+        </section>
+    </article>
+    <!--made thanks to https://github.com/bedimcode/portfolio-responsive-complete/blob/master/index.html-->
+</section>
 </main>
 
  <footer class="end">

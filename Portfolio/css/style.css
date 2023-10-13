@@ -109,7 +109,7 @@ ul li {
     align-items: center;
 }
 .navbar-nav li a{
-    align-items: end;
+    align-items: center;
     display: flex;
 }
 ul li ul.dropdown li {
@@ -226,8 +226,7 @@ section{
 }
 
 /* Styling for the social media icons and contact icons */
-.social-media a,
-div.contact-icons i{
+.social-media a{
     display: inline-flex;
     width: 4rem;
     height: 4rem;
@@ -549,6 +548,7 @@ a.btn, .contact-form .submit{
 /* Styling some main parts of the contact form*/
 .contact-form{
     position: relative;
+    padding: 0%;
 }
 .contact-form form input, form textarea{
     width: 100%;
@@ -770,7 +770,7 @@ a{
 }
 .hero5{
     height: 40rem;
-    background: url(../pictures/Growth.jpg) no-repeat center center / cover;
+    background: url(../pictures/growth.jpg) no-repeat center center / cover;
     border-radius: 30px;
     align-items: center;
     display: flex;
@@ -1123,4 +1123,8 @@ button:hover{
     letter-spacing: 0.1em;
     color: var(--main-color);
     margin-bottom: 10px;
+}
+ul li a i{
+    font-size: 40px;
+    text-align: center;
 }
