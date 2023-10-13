@@ -142,7 +142,7 @@ ul li:hover ul.dropdown {
 }
 .dropdown li a:hover{
   text-decoration: underline;
-  background-color: gray;
+  background-color: var(--third-bg-color);
 }
 .dropdown li{
   width: 200px;
@@ -937,12 +937,12 @@ button:hover{
   .content {
     position: relative;
   }
-  
+/*this is the styling for the animation of the text you can see in evey learning outcome*/
   .content h5 {
     color: #fff;
     font-size: 3em;
     position: absolute;
-    top: 30px; /* Adjust this value as needed */
+    top: 30px; 
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1002,6 +1002,7 @@ button:hover{
   margin-bottom: 20px;
   border-bottom: 2px solid white;
 }
+/*some returning styles, but with diffrent positioning*/
 .documentation p{
     margin-bottom: 20px;
     font-size: 16px;
@@ -1098,7 +1099,7 @@ button:hover{
     margin-top: 10px;
 }
 .logo-size{
-    width: 40%;
+    width: 50%;
 }
 .logo-box{
     display: flex;
