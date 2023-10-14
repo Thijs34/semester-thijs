@@ -291,6 +291,7 @@ a.btn, .contact-form .submit{
     border: none;
     outline: none;
     transition: .5s ease;
+    margin-bottom: 10px;
 }
 
 /* Hover styling for the buttons in the home section */
